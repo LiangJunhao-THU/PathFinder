@@ -11,7 +11,7 @@
 ### Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
 * NVIDIA GPU (Tested on Nvidia GeForce RTX 3090 x 4)
-* Python (3.7.9),PyTorch (version 1.8.0), Lifelines (version 0.25.11), NumPy (version 1.19.2), Pandas (version 1.2.2), Albumentations(version 0.5.2), OpenCV (version 4.5.1), Pillow (version 7.2.0), OpenSlide (version 1.1.2), Captum (version 0.2.0), SciPy (1.4.1), Seaborn (0.9.0), Matplotlib (version 3.1.1).
+* Python (3.7.9),PyTorch (version 1.8.0), Lifelines (version 0.25.11), NumPy (version 1.19.2), Pandas (version 1.2.2), Albumentations (version 0.5.2), OpenCV (version 4.5.1), Pillow (version 7.2.0), OpenSlide (version 1.1.2), Captum (version 0.2.0), SciPy (version 1.4.1), Seaborn (version 0.9.0), Matplotlib (version 3.1.1).
 
 ### Data Preparation
 * WSIs and clinical information of patients are used in this project. Raw WSIs are stored as ```.svs```, ```.mrxs``` or ```.tiff``` files. Clinical information are stored as ```.csv``` files. 

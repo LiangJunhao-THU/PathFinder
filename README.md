@@ -18,9 +18,9 @@ WSIs and clinical information of patients are used in this project. Raw WSIs are
 ```bash
 DATA_ROOT_DIR/
     └──DATASET_DIR/
-         ├── clinical_information                                 -------------
-                ├── Hospital_1.csv                                            |
-                ├── Hospital_2.csv                                            |
+         ├── clinical_information                                 +++++++++++++
+                ├── Hospital_1.csv                                            +
+                ├── Hospital_2.csv                                            +
                 └── ...                                                       |
          ├── WSI_data                                                         |
                 ├── Hospital_1                                                |

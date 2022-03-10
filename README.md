@@ -18,42 +18,42 @@ WSIs and clinical information of patients are used in this project. Raw WSIs are
 ```bash
 DATA_ROOT_DIR/
     └──DATASET_DIR/
-         ├── clinical_information                                 +++++++++++++
-                ├── Hospital_1.csv                                            +
-                ├── Hospital_2.csv                                            +
-                └── ...                                                       |
-         ├── WSI_data                                                         |
-                ├── Hospital_1                                                |
-                       ├── slide_1.svs                                        |
-                       ├── slide_2.svs                                  Source Data
-                       └── ...                                                |
-                ├── Hospital_2                                                |
-                       ├── slide_1.svs                                        |
-                       ├── slide_2.svs                                        |
-                       └── ...                                                |
-                └── ...                                            ------------
-         ├── macro_mode                                            ------------
-                ├── Hospital_1                                                |
-                       ├── slide_1_heatmaps.npy                               |
-                       ├── slide_2_heatmaps.npy                               |
-                       └── ...                                                |
-                ├── Hospital_2                                                |
-                       ├── slide_1_heatmaps.npy                               |
-                       ├── slide_2_heatmaps.npy                               |
-                       └── ...                                                |
-                └── ...                                                       |    
-         └── micro_mode                                              Processed Data
-                ├── Hospital_1                                                |
-                       ├── slide_1                                            |
-                              ├── patch_1.tif                                 |
-                              ├── patch_2.tif                                 |
-                              └── ...                                         |
-                       ├── slide_2                                            |
-                              ├── patch_1.tif                                 |
-                              ├── patch_2.tif                                 |
-                              └── ...                                         |
-                       └── ...                                                |
-                └── ...                                            ------------             
+         ├── clinical_information                       + + + 
+                ├── Hospital_1.csv                          +
+                ├── Hospital_2.csv                          +
+                └── ...                                     +
+         ├── WSI_data                                       +
+                ├── Hospital_1                              +
+                       ├── slide_1.svs                      +
+                       ├── slide_2.svs                Source Data
+                       └── ...                              +
+                ├── Hospital_2                              +
+                       ├── slide_1.svs                      +
+                       ├── slide_2.svs                      +
+                       └── ...                              +
+                └── ...                                 + + +
+         ├── macro_mode                                 + + +
+                ├── Hospital_1                              +
+                       ├── slide_1_heatmaps.npy             +
+                       ├── slide_2_heatmaps.npy             +
+                       └── ...                              +
+                ├── Hospital_2                              +
+                       ├── slide_1_heatmaps.npy             +
+                       ├── slide_2_heatmaps.npy             +
+                       └── ...                              +
+                └── ...                                     +
+         └── micro_mode                            Processed Data
+                ├── Hospital_1                              +
+                       ├── slide_1                          +
+                              ├── patch_1.tif               +
+                              ├── patch_2.tif               +
+                              └── ...                       +
+                       ├── slide_2                          +
+                              ├── patch_1.tif               +
+                              ├── patch_2.tif               +
+                              └── ...                       +
+                       └── ...                              +
+                └── ...                                 + + +             
 ```
 DATA_ROOT_DIR is the base directory of all datasets (e.g. the directory to your SSD). DATASET_DIR is the name of the folder containing data specific to one experiment and features from each slide is stored as .pt files.
 

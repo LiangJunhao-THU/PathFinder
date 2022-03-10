@@ -16,10 +16,10 @@
 ### Data Preparation
 * WSIs and clinical information of patients are used in this project. Raw WSIs are stored as .svs, .mrxs or .tiff files. Clinical information are stored as .csv files. 
 * WSIs are first processed by PaSegNet to get multi-class tissue probability heatmaps (macro mode), which sorted as .npy files. 
-    For example, the dummy splits were created by calling:
-    ``` shell
-    python create_splits.py --task dummy_mtl_concat --seed 1 --k 1
-    ```
+For example, the dummy splits were created by calling:
+``` shell
+python create_splits.py --task dummy_mtl_concat --seed 1 --k 1
+```
 * Tumor pathces (micro mode) are extracted based on macro mode and WSIs, and stored as .tif files. 
 * Macro mode and clinical information is used to train MacroNet, micro mode and clinical information is used to train MicroNet, both macro mode, micro mode and * * clinical information is used to train M2MNet. 
 The Data distribution is like:

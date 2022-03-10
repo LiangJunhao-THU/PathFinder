@@ -11,7 +11,7 @@
 ### Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
 * NVIDIA GPU (Tested on Nvidia GeForce RTX 3090 x 4)
-* Python (3.7.7), h5py (2.10.0), matplotlib (3.1.1), numpy (1.18.1), opencv-python (4.1.1), openslide-python (1.1.1), openslide (3.4.1), pandas (1.0.3), pillow (7.0.0), PyTorch (1.5.1), scikit-learn (0.22.1), scipy (1.3.1), tensorflow (1.14.0), tensorboardx (1.9), torchvision (0.6).
+* Python (3.7.9),PyTorch (version 1.8.0), Lifelines (version 0.25.11), NumPy (version 1.19.2), Pandas (version 1.2.2), Albumentations(version 0.5.2), OpenCV (version 4.5.1), Pillow (version 7.2.0), OpenSlide (version 1.1.2), Captum (version 0.2.0), SciPy (1.4.1), Seaborn (0.9.0), Matplotlib (version 3.1.1).
 
 ### Data Preparation
 * WSIs and clinical information of patients are used in this project. Raw WSIs are stored as ```.svs```, ```.mrxs``` or ```.tiff``` files. Clinical information are stored as ```.csv``` files. 
@@ -96,7 +96,7 @@ To explore the features networks focus on, run ```./Discovery/attribution.ipynb`
 
 
 ## Issues
-- Please report all issues on the public forum.
+Please report all issues on the public forum.
 
 
 ## License

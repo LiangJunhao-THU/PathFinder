@@ -14,7 +14,11 @@
 * Python (3.7.7), h5py (2.10.0), matplotlib (3.1.1), numpy (1.18.1), opencv-python (4.1.1), openslide-python (1.1.1), openslide (3.4.1), pandas (1.0.3), pillow (7.0.0), PyTorch (1.5.1), scikit-learn (0.22.1), scipy (1.3.1), tensorflow (1.14.0), tensorboardx (1.9), torchvision (0.6).
 
 ### Data Preparation
-WSIs and clinical information of patients are used in this project. Raw WSIs are stored as .svs, .mrxs or .tiff files. Clinical information are stored as .csv files. WSIs are first processed by PaSegNet to get multi-class tissue probability heatmaps (macro mode), which sorted as .npy files. Tumor pathces (micro mode) are extracted based on macro mode and WSIs, and stored as .tif files. Macro mode and clinical information is used to train MacroNet, micro mode and clinical information is used to train MicroNet, both macro mode, micro mode and clinical information is used to train M2MNet. The Data distribution is like:
+* WSIs and clinical information of patients are used in this project. Raw WSIs are stored as .svs, .mrxs or .tiff files. Clinical information are stored as .csv files. 
+* WSIs are first processed by PaSegNet to get multi-class tissue probability heatmaps (macro mode), which sorted as .npy files. 
+* Tumor pathces (micro mode) are extracted based on macro mode and WSIs, and stored as .tif files. 
+* Macro mode and clinical information is used to train MacroNet, micro mode and clinical information is used to train MicroNet, both macro mode, micro mode and * * clinical information is used to train M2MNet. 
+The Data distribution is like:
 ```bash
 DATA_ROOT_DIR/
     └──DATASET_DIR/
@@ -55,7 +59,7 @@ DATA_ROOT_DIR/
                        └── ...                              +
                 └── ...                                 + + +             
 ```
-DATA_ROOT_DIR is the base directory of all datasets (e.g. the directory to your SSD). DATASET_DIR is the name of the folder containing data specific to one experiment and features from each slide is stored as .pt files.
+DATA_ROOT_DIR is the base directory of all datasets (e.g. the directory to your SSD). DATASET_DIR is the name of the folder containing data specific to one experiment.
 
 
 

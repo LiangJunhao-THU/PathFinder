@@ -1,14 +1,12 @@
 # PathFinder
-### AI inspired discovery of new biomarker for cancer prognosis
-*Abstract:*
-
+### AI inspired discovery of new biomarker for clinical cancer prognosis
 © This code is made available for non-commercial academic purposes. 
 
 
 ## PathFinder: Cancer biomarker discovery via AI
 * WSI_decoupling: *Get the macro mode (3D-numpy-array of multi-class tissue probability heatmaps) of WSIs.*
 * Prognosis: *Train prognostic deep neural networks (MacroNet, MicroNet and M2MNet) for cancer prognosis.*
-* Discovery: *Using attribution methods to find important features for further analyses and discovery.*
+* Discovery: *Use attribution methods to find important features for further analyses and discovery.*
 
 ## Pre-requisites:
 * Linux (Tested on Ubuntu 18.04)
@@ -22,11 +20,40 @@ DATA_ROOT_DIR/
     └──DATASET_DIR/
          ├── clinical_information
                 ├── Hospital_1.csv
+                ├── Hospital_2.csv
                 └── ...
-         └── WSI_data
+         ├── WSI_data
                 ├── Hospital_1
+                       ├── slide_1.svs
+                       ├── slide_2.svs
+                       └── ...
                 ├── Hospital_2
+                       ├── slide_1.svs
+                       ├── slide_2.svs
+                       └── ...
                 └── ...
+         ├── macro_mode
+                ├── Hospital_1
+                       ├── slide_1_heatmaps.npy
+                       ├── slide_2_heatmaps.npy
+                       └── ...
+                ├── Hospital_2
+                       ├── slide_1_heatmaps.npy
+                       ├── slide_2_heatmaps.npy
+                       └── ...
+                └── ...
+         └── micro_mode
+                ├── Hospital_1
+                       ├── slide_1
+                              ├── patch_1.tif
+                              ├── patch_2.tif
+                              └── ...
+                       ├── slide_2
+                              ├── patch_1.tif
+                              ├── patch_2.tif
+                              └── ...
+                       └── ...
+                └── ...                
 ```
 DATA_ROOT_DIR is the base directory of all datasets (e.g. the directory to your SSD). DATASET_DIR is the name of the folder containing data specific to one experiment and features from each slide is stored as .pt files.
 

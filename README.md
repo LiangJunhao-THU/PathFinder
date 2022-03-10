@@ -77,7 +77,6 @@ DATA_ROOT_DIR/
 DATA_ROOT_DIR is the base directory of all datasets (e.g. the directory to your SSD). DATASET_DIR is the name of the folder containing data specific to one experiment.
 
 
-
 ### Training & Evaluation
 After data preparation, MacroNet can be trained and tested on TCGA data in a cross-validation by calling:
 ``` shell
@@ -89,19 +88,20 @@ The generalization ability of MacroNet can be tested by calling:
 cd ./Prognosis
 python train_TCGA_test_QHCG.py
 ```
-To train and evaluate MicroNet and M2MNet, import corresponding data loader and network architecture in ```./Prognosis/train_test.py```.Data loaders can be found in ```./Prognosis/data_loaders.py```, network architectures can be found in ```./Prognosis/Networks```
+To train and evaluate MicroNet and M2MNet, import corresponding data loader and network architecture in ```./Prognosis/train_test.py```. Data loaders can be found in ```./Prognosis/data_loaders.py```, network architectures can be found in ```./Prognosis/Networks```.
 
 
 ### Biomarker discovery
-
-
+To explore the features networks focus on, run ```./Discovery/attribution.ipynb```.
 
 
 ## Issues
 - Please report all issues on the public forum.
 
+
 ## License
 This code is made available under the GPLv3 License and is available for non-commercial academic purposes. 
+
 
 ## Reference
 If you find our work useful in your research or if you use parts of this code please consider citing our paper.
